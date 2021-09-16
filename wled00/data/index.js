@@ -932,7 +932,7 @@ function updateUI()
 {
 	d.getElementById('buttonPower').className = (isOn) ? "active":"";
 	d.getElementById('buttonNl').className = (nlA) ? "active":"";
-	d.getElementById('buttonSync').className = (syncSend) ? "active":"";
+	// d.getElementById('buttonSync').className = (syncSend) ? "active":"";
 
 	updateTrail(d.getElementById('sliderBri'));
 	updateTrail(d.getElementById('sliderSpeed'));
@@ -1155,7 +1155,7 @@ function requestJson(command, rinfo = true) {
 			}
 
 			var info = json.info;
-			var name = info.name;
+			var name = "EASY-LED"; //info.name;
 			d.getElementById('namelabel').innerHTML = name;
 			if (name === "Dinnerbone") {
 				d.documentElement.style.transform = "rotate(180deg)";
